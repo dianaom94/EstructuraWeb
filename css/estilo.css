@@ -1,0 +1,453 @@
+/* Este signo (*) le aplica universalmente propiedades CSS a todos los elementos dentro del html, */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    /* Esta propiedad afina la tipografia del nuestro sitio */
+    -moz-osx-font-smoothing: grayscale;
+    /* Esta propiedad afina la tipografia del nuestro sitio */
+}
+.divheader {
+    
+    display: flex;
+    padding: 2rem 1rem;
+    justify-content: center;
+    margin-top: -10px;
+    width: 100%;
+    height: 250px; 
+    background-size: cover;
+    background-image:url(../galeria/children.jpg);
+}
+.divheader .headertitulo{
+    width: 100%; 
+    margin-top: -60px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+    
+}
+.divheader .headertitulo .tituloprincipal{
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    padding: 4rem 2rem;
+    margin-top: -60px;
+    margin-left: 10%;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-text-fill-color: rgb(53, 206, 61);
+    -webkit-text-stroke: 1px rgb(12, 21, 71);
+    
+}
+
+.containermenu {
+    display: flex;
+    width: 100%;
+    background-image: url(../galeria/astronauta.jpg);
+    height: 53px;
+    background-size: cover;
+    background-size: 100%;
+    float:right;
+    list-style: none;
+    background-position: 0px 149px
+    
+}
+
+.logo{
+    display:flex;
+    height: 50px;
+    margin-left: 2%;
+}
+
+
+
+
+.containermenu .mainmenu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    border-top-style:double;
+    border-bottom-style: double;
+    border-top-color: rgb(255, 231, 20);
+    border-bottom-color: rgb(255, 231, 20);
+    
+  
+    
+    
+}
+
+.containermenu .mainmenu .listamenu{
+    width: 100%;
+    margin:auto;
+    display: flex; 
+    list-style: none;
+    float:right;
+    justify-content: flex-end;
+    
+    
+    
+}
+.containermenu .mainmenu .listamenu .link{
+    width: 100%;
+    display: flex;
+    margin:auto;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: 50;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    -webkit-text-stroke: 0.3px rgb(248, 248, 255);
+    
+    
+}
+
+a:hover{
+    background-color: rgb(201, 243, 177);
+    transition: .5s;
+    
+}
+
+.sectioncontainer{
+    width: 100%;
+    background: rgba(185, 195, 241, 0.432);
+   
+}
+
+.sectioncontainer .mainsection{
+    padding: 1rem;
+    display: flex;
+    padding-top: 5%;
+    width: 100%; 
+    float: left;
+    background: rgba(177, 182, 214, 0.432);
+    align-items: flex-start;
+    
+    
+}
+
+.imagen1{
+    padding: 1rem;
+    display: flex;
+    border-radius: 40px;
+    margin-left: 1%;
+    
+}
+
+.textosection1{
+    display: flex;
+    margin-top: 1%;
+    padding: 1rem;
+    background: rgba(105, 124, 231, 0.493);
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    height: 408px;
+    
+
+    
+}
+
+.centrartexto{
+    width: 50%;
+    text-align: center;
+}
+
+.sectionservicios{
+    width: 100%;
+    background-color: #ededed;
+    padding: 2rem 1rem;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   
+     
+}
+.sectionservicios .box-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.sectionservicios .box-container .titulosection{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    
+}
+.sectionservicios .box-container .boxmodule{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    
+}
+
+.sectionservicios .box-container .boxmodule .box{
+    
+    display: flex;
+    width: 22.0%;
+    padding: 2rem;
+    background-color: #4fe3c1;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .4s ease;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+
+.sectionservicios .box-container .boxmodule .box .icono-module{
+    width: 50%;
+    max-width: 600px;
+    margin-bottom: 1.2rem;
+    max-height: 150px;
+    
+}
+
+.sectionservicios .box-container .boxmodule .box .sub-title{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+.sectionservicios .box-container .boxmodule .box .botonmodule {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.3);
+    line-height: 55px;
+    height: 55px;
+    padding: 0 .5rem;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    transition: all .4s ease;
+    text-align: center;
+}
+.sectionservicios .box-container .boxmodule .box .sub-title .parrafos {
+    color: white;
+    transition: all .4s ease;
+}
+.sectionservicios .box-container .boxmodule .box .sub-title {
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+}
+
+.sectionservicios.box-container .boxmodule .box .parrafos {
+    font-size: 5px;
+    line-height: 25px;
+    opacity: .8;
+}
+
+.sectionservicios .box-container .boxmodule .box:nth-of-type(2) {
+    background-color: #4a4a4a;
+}
+
+.sectionservicios .box-container .boxmodule .box:nth-of-type(3) {
+    background-color: #41a7f4;
+}
+
+.sectionservicios  .box-container .boxmodule .box:nth-of-type(4) {
+    background-color: #cfbdf7;
+}
+
+.sectionservicios .box-container .boxmodule .box:hover {
+    background-color: white;
+    box-shadow: 0 50px 100px rgba(0, 0, 0, .02);
+    transform: scale(.95);
+}
+
+.section-container .box-container .boxmodule .box:hover .sub-title,
+.section-container .box-container .boxmodule .box:hover .parrafo {
+    color: black;
+}
+
+.sectionservicios .box-container .boxmodule .box:hover .botonmodule {
+    background-color: black;
+}
+
+.sectioncontainer .mainsection .containerbeneficios{
+     width: 100%;
+     padding: 1rem;
+    
+     
+}
+
+.sectioncontainer .mainsection .containerbeneficios .titulobeneficios{
+    padding: 1rem;
+    width: 40%;
+    background: #41a7f4;
+    border-radius: 10px;
+}
+
+.sectioncontainer .mainsection .containerbeneficios .boxbeneficios{
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    width: 80%;
+    background: #41a7f4;
+    border-radius: 10px;
+}
+
+.sectioncontainer .mainsection .containerbeneficios .boxbeneficios:nth-of-type(1) {
+    background-color: #4a4a4a;
+}
+
+.sectioncontainer .mainsection .containerbeneficios .boxbeneficios:nth-of-type(2) {
+    background-color: #4fe3c1;
+}
+
+.sectioncontainer .mainsection .containerbeneficios .boxbeneficios:nth-of-type(3) {
+    background-color: #cfbdf7;
+}
+
+.containercontacto{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containercontacto .titulocontacto{
+    background: #cfbdf7;
+    border-radius: 10px;
+    border: 3px solid black;
+    padding: 1rem;
+}
+
+.containercontacto .maincontainercontacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    background: #4a4a4a;
+    border-radius: 10px;
+    width:55%;
+    
+    border:3px solid #cfbdf7 ;
+
+}
+.containercontacto .maincontainercontacto .nombreyapellido{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+}
+
+.containercontacto .maincontainercontacto .paiscorreo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+}
+
+.containercontacto .maincontainercontacto .cajondemensaje{
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.inputstyle {
+    width: 47%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border:3px solid #cfbdf7;
+}
+
+.textstyle{
+    width: 100%;
+    padding: 1rem;
+    height: 100px;
+    border-radius: 5px;
+    border:3px solid #cfbdf7;
+}
+.botonstyle:hover{
+    background: #ffffff;
+    transition: .5s ease-in-out;
+
+}
+.botonenviar{
+    display: flex;
+    padding:1rem;
+    height: 4rem;
+    align-items: center;
+    margin-left: -75%;
+}
+.botonstyle{
+    display: flex;
+    padding: 0.5rem;
+    padding-right:4rem;
+    background: #cfbdf7;
+    color: rgb(0, 0, 0);
+    display: flex;
+    width: 100%;
+    border:3px solid #020202;
+    border-radius: 5px;
+}
+
+.footercontainer{
+    width: 100%;
+    display: flex;
+    background-color: rgba(185, 195, 241, 0.432);
+    height: 60px;
+    padding: 1rem;
+    justify-content:left;
+    
+}
+
+.footercontainer .imgfooter{
+    border-radius: 5px;
+    margin-top:-5px;
+
+}
+.cuerpoenviado{
+    background: rgba(185, 195, 241, 0.432);;
+    width: 100%;
+    height: 100%;
+}
+.containerenviado{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding:2rem;
+    
+}
+.containerenviado .imagencheck{
+    display: flex;
+    width: 100px;
+
+}
+
+
+
+
